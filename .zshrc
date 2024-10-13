@@ -24,7 +24,7 @@ zinit light-mode for \
 #
 # Plugin history-search-multi-word loaded with investigating.
 
-zinit ice wait
+#zinit ice silent wait
 zinit load zdharma-continuum/history-search-multi-word
 
 # Two regular plugins loaded without investigating.
@@ -33,8 +33,6 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 
 # Snippet
 zinit snippet https://gist.githubusercontent.com/hightemp/5071909/raw/
-
+source ./.aliases
 #zinit light starship/starship
-#zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)"'
-#zinit load starship/starship
-
+eval "$(starship init zsh)"
