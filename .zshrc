@@ -33,6 +33,9 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 
 # Snippet
 zinit snippet https://gist.githubusercontent.com/hightemp/5071909/raw/
-source .aliases
+
+source $ZDOTDIR/.aliases
+
 #zinit light starship/starship
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"

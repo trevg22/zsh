@@ -24,7 +24,7 @@ alias _=sudo
 alias l=ls
 alias g=git
 
-alias z='zoxide'
+#alias z='zoxide'
 # mask built-ins with better defaults
 alias vi=vim
 
