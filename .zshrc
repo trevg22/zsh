@@ -13,8 +13,10 @@ command -v pyenv >/dev/null && eval "$(pyenv init - zsh)"
 # Zinit
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+compinit
 zinit cdreplay -q  # replaces compinit
+source <(jj util completion zsh)
 
 # Plugin annexes
 zinit light-mode for \
@@ -56,3 +58,9 @@ setopt HIST_VERIFY               # Do not execute immediately upon history expan
 setopt APPEND_HISTORY            # append to history file
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+# Created by `pipx` on 2025-09-14 02:44:01
+export PATH="$PATH:/home/trevor/.local/bin"
+
+# opencode
+export PATH=/home/trevor/.opencode/bin:$PATH

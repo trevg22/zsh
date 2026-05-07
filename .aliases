@@ -2,18 +2,8 @@
 #
 # .aliases - Set whatever shell aliases you want.
 #
-#git alias
-alias ga='git add'
-alias gau'git add -u'
 alias gs='git status'
-alias gc='git commit'
-alias gca='git commit --amend --no-edit'
-alias gps='git push'
-alias gpl='git pull'
-alias gf='git fetch'
-alias gm='git merge'
-alias gco='git checkout'
-
+alias e='eza'
 #env aliases
 alias cmB='cmake -B build'
 alias cmb='cmake --build build'
